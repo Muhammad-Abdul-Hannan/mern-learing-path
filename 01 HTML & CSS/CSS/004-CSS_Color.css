@@ -1,0 +1,13 @@
+/* ------------ Color ------------- */
+
+h1 {
+    color:DodgerBlue;               /* Standard Color */
+    color:#ff6347;                  /* HEX  - #rrggbb */
+    color:rgb(255, 99, 71);         /* RGB  - rgb(red, green, blue) */
+    color:hsl(9, 100%, 64%);        /* HSL  - hsl(hue, saturation, lightness) */
+    
+    color:rgba(255, 99, 71, 0.5);   /* RGBA - rgba(red, green, blue, alpha) */
+    color:hsla(9, 100%, 64%, 0.5);  /* HSLA - hsla(hue, saturation, lightness, alpha) */
+
+    opacity: 0.3;
+}

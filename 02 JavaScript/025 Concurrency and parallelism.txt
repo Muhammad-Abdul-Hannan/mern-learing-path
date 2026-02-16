@@ -1,0 +1,5 @@
+Concurrency: running sync and async code simultaneously in JS is known as Concurrency.
+
+parallelism: focus zyda krta he different processors or unke cores pr kam ko chlany pr.
+
+throttling: kisi code ko control krna number of executions.

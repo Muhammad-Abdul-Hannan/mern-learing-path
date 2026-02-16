@@ -1,0 +1,33 @@
+/* ---------------- Outline ------------------ */
+
+div {
+    outline-style: dotted;
+    outline-style: dashed;
+    outline-style: solid;
+    outline-style: double;
+    outline-style: groove;
+    outline-style: ridge;
+    outline-style: inset;
+    outline-style: outset;
+    outline-style: none;
+    outline-style: hidden;
+
+    outline-color: red;
+    
+    outline-width: thin;            /* thin (1px), medium (3px), thick (5px) */
+
+    outline: dashed;
+    outline: dotted red;
+    outline: 5px solid yellow;
+    outline: thick ridge pink;
+
+    outline-offset: 15px;
+
+}
+
+p {
+    margin: 30px;
+    border: 1px solid black;
+    outline: 1px solid red;
+    outline-offset: 15px;
+}

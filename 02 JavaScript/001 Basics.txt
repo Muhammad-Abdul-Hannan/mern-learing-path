@@ -1,0 +1,170 @@
+✅ Variables & scope ✅
+✅ Conditionals ✅
+✅ Loops ✅
+✅ Functions & arrow functions ✅
+✅ Objects ✅
+✅ Arrays ✅
+✅ Array methods (map/filter/reduce) ✅
+✅ DOM ✅
+✅ Events ✅
+✅ Fetch API ✅
+✅ localStorage ✅
+✅ Callback ✅
+✅ setTimeout ✅
+✅ Promise ✅
+✅ Async / await ✅
+✅ Errors ✅
+✅ Modules ✅
+
+✅ Clean Final Version (What You Should Remember)
+setInterval → runs repeatedly every X ms
+setTimeout → runs once after X ms (no automatic network timeout)
+callback → function passed into another function
+async → function returns a Promise
+await → waits for a Promise inside async function
+
+
+Keywords: words that has some meaning in language, for, etc.
+
+variable: changes its value
+var x = "Yes";
+constant: no change in value
+const x = "Yes";
+
+Now in modern JS var is not recommended. Use let and const.
+let when your value can change. let x = 3;
+const when the value can change. const m = "yes"; const must be assigned the value when it is declared.
+Use const when you declare a new:
+Array, function, object, RegExp.
+
+typeof: typeof operator is used to find the typeof variable. e.g typeof(x).
+
+let is block scope declaration. Variables declared with let (block scope) are inside {} and can't be accessed outside {}.
+
+Hoisting: Using variable/functions before declaration. This is possible in JS. Actually, JS moves declation on top of code so it does not cause error even if it is written below the usage of variable or function. It returns undefined answer/result. Remember undefined is not error it is a value.
+console.log(a);
+var a = 10;
+
+Types in JS: 
+Primitives: Copying it to other variable copy the exact/real value.
+var a = 12;
+var b = a;
+b = b + 2;
+a will still remain 12.
+
+Reference: All values in brackets. (), [], {}. Copying it to other variable just copy the address/reference.
+var a = [1,2,3,4];
+var b = a;
+b.pop()
+this will remove last element of a.
+
+Conditionals: if else, else if, switch case
+Select code to be executed on the bases of condition.
+
+if(true/false){
+    statements;
+}
+else if{
+    statement;
+}
+else{
+    statement;
+}
+
+
+Loops: for & while
+Repeat a statement or set of statements.
+for (start; end; change){
+    statements;
+}
+for (i=1; i>20; i++){
+    statements;
+}
+while(condition){
+    statements;
+}
+
+for of Loop: it also iterate through the values of objects that are iterable like map, strings, sets etc.
+
+for (let ch of 'AEIOU'){
+    if (/[aeiouAEIOU]/.test(arr[j])){
+            count ++;  // counting vowels using regex.
+        }
+}
+
+Boolean(): this method is used to test the expression is true of false.
+
+Functions: Named set of statements.
+Three uses of functions: 
+1: Run code on a call not now.
+2: Reuse set of code repetedaly.
+3: Run code each time with different data.
+
+Total 6 ways to creat function. 3 in ES5 and 3 in ES6.
+
+function abcd(x){
+    return a;
+}
+
+Below is same function used as value of variable so it is terminated by ;
+var x = function(){
+    return y;
+};
+
+ES6 arrow function: (parameters) => (returned value expression)
+var sum = (a,b) => {
+    return a+b;
+}
+or we can write this as:
+var sum = (a,b) => (a+b);
+
+var calc = (a, b) => (a + b);
+var calc = (a, b) => {
+    function body;
+}
+
+In JS functions have a built in object known as arugment object. This object contains an array of values (parameters) passed to the function during function call.
+Rest Parameters: ... is used to get the parameters when indefinite number of arugments are passed.
+
+
+
+Arrays: Storing multiple values in variable.
+a = [1,3,45, 'yes', 3]
+
+Operations on Arrays: 
+Push: Add member value at end of array.
+array.push(8)
+Pop: Remove value from end of array.
+array.pop()
+Shift: Remove one value from beggining:
+array.shift()
+unshift: Add one value in beginning:
+array.unshift(4)
+Splice: remove range of values from any index.
+array.splice(2, 3);
+This will remove 3 values from index 2.
+
+
+Objects: Storing multiple data points of one thing is object. It stores in key value pair.
+
+Blank object
+var a = {}
+
+Filled object
+var a = {
+    age: 24,
+    name : "ALi",
+    records: {
+        file: "A1",
+        space: "2gb",
+    }
+    cal: function(){
+
+    }
+}
+In above object, age, name etc are properties and cal is method because its value is function.
+To access object value:
+a.name
+
+Updating value of object properties.
+a.name = "Hannan";

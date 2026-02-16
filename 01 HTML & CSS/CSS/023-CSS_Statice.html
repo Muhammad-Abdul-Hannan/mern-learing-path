@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static</title>
+
+<style>
+
+    body {
+        background: #030018;
+        color: #ffffff;
+        padding: 20px;
+    }
+
+    div {
+        padding: 20px; 
+        font-size: 1.5rem;
+        overflow: hidden;
+        margin: 0;
+        min-height: 150px;  
+        font-size: 1.25rem;
+        line-height: 1.5;
+        letter-spacing: 3px;
+        font-weight: normal;
+    }
+    .purple{ 
+        background-color: #292477;
+    }
+    .green {
+        background-color: #13693B;
+    }
+    .first {  
+        /* No position set, so it's static */
+    }
+
+    .another {
+        /* No position set, so it's static */
+        top: 50px;
+    }
+
+
+
+</style>
+</head>
+<body>
+    <div class="first purple">
+        position: static
+    </div>
+
+    <div class="another green">
+        position: static<br>
+        top: 50px (this has no effect)
+    </div>
+
+</body>
+</html>

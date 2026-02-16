@@ -1,0 +1,42 @@
+/* --------------- Border --------------- */
+
+p {
+    border-style: dotted;
+    border-style: dashed;
+    border-style: solid;
+    border-style: double;
+    border-style: groove;
+    border-style: ridge;
+    border-style: inset;
+    border-style: outset;
+    border-style: none;
+    border-style: hidden;
+
+    border-style: dotted;                           /* All 4 sides */
+    border-style: dotted solid;                     /* dotted (Top, Bottom) - solid (Left, Right) */
+    border-style: dotted solid double;              /* Top Right Bottom */
+    border-style: dotted dashed solid double;       /* Top Right Bottom Left */
+
+    border-width: 5px;                              /* px, pt, cm, em */
+    border-width: medium;                           /* thin (1px), medium (3px), thick (5px) */
+
+    border-width: 5px;                              /* All 4 sides */
+    border-width: 5px 20px;                         /* 5px (Top, Bottom) - 20px (Left, Right) */
+    border-width: 2px 4px 6px 8px;                  /* Top - Right - Bottom - Left */
+
+    border-color: blue;
+    border-color: red green blue yellow;    /* Top - Right - Bottom - Left */
+
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+
+    border: 5px solid red;
+
+    border-left: 6px solid red;
+    border-bottom: 6px solid red;
+
+    border-radius: 5px;
+
+}

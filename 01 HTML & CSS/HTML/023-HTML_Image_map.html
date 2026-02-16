@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: orange;">
+
+
+    <img src="023-Image.png" alt="Image" usemap="#workmap">
+
+    <!-- rect = x1, y1, x2, y2 -->
+    <!-- circle = m1, m2, size -->
+    <map name="workmap">
+        <area shape="rect" coords="100,100,400,400" alt="Blue" href="https:\\google.com">
+        <area shape="circle" coords="750,750,175" alt="Red" href="#" onclick="myFunction()">
+    </map>
+
+    <script>
+        function myFunction() {
+          alert("You clicked the circle!");
+        }
+    </script>
+
+</body>
+</html>
+

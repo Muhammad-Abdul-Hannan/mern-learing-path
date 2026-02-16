@@ -1,0 +1,38 @@
+sync: Start one task, complete it, then start second task and so on.
+
+async: start multiple task simultaneasly, return the answer of task that complete first and so on.
+
+How to diff in sync and async code:
+Below means code is async:
+setTimeout
+setInterval
+promises
+fetch
+axios
+XMLHttpRequest
+
+other than above is all sync JS.
+
+
+
+What is async JS:
+When the final code is dependent on other server, and we don't know the exact time of answer from server. We use async JS to run the dependent code to avoid blocking. Because dependent code will make error without answer.
+
+setTimeout(function(){
+    console.log("Yes");
+}, 2000)
+This code will run after 2 seconds.
+
+
+
+
+=========================
+
+JS is not asynchronous: Yes, JS is not asynchronous. There are two stacks, main stack and side stack.
+Main stack code is running and side stack code can process behind the scene and is moved to main stack when processing is complete. So, execution is in main stack.
+
+Side stack is only checked when main stack is empty. Mean all processes in main stack are done, then side stack is checked if there is any process ready to run to be moved to main stack.
+
+This communication between main and side stack is done by 'event loop'.
+
+

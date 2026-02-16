@@ -1,0 +1,37 @@
+When an object is created, it automatically get prototype property. JS adds this to all objects.
+
+goto console and type:
+var obj = {name: "Ali"};
+
+obj.
+
+This above code (object name with dot = obj.) will return you name (that you created above with value "Ali") and some other values also.
+Where these values come from???? these are prototype properties added to object automatically.
+
+prototype contains many helpers methods that can be used on object.
+
+for example:
+we can check: obj.hasOwnProperty{'name'}
+This will return true because out object obj contains name.
+
+Let's say if we create an array. We want to know length of it. We can use .length method on it. Here .length is prototype property.
+
+
+==================
+
+Prototype Inheritence: it means passing parent's features or properties to their childrens, to do the same thing in JS with the help of prototype (one extra property always given by JS to every object) is called prototypal inheritance.
+
+var human = {
+    canFly: false;
+    canTalk: true;
+    canWalk: true;
+}
+
+var student = {
+    study: true;
+    makeWeb = true;
+}
+
+To give all properties of human to student we borrow:
+student.__proto__ = human;
+Now all human properties are added to student prototype. This is prototypal inheritance.

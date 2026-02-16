@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table</title>
+
+    <style>
+        /* 
+        border-style: dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden
+        */
+        table{
+            width: 300px;
+            /* border-spacing: 30px; */
+        }
+        table, th, td {
+            border: 1px solid black;
+            /* border-collapse: collapse;
+            border-style: double; */
+            /* border-radius: 10px; */
+        }
+        th, td {
+            background-color: #96D4D4;
+            border-color: red;
+            /* padding: 15px; */
+            /* padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 40px; */
+        }
+        td {
+            text-align: left;
+        }
+        
+    </style>
+
+
+</head>
+<body>
+
+<h1>This is a Table</h1>
+
+<table  cellspacing="20" cellpadding="50">
+    <caption>Person Data</caption>
+    <tr style="height:50px">
+        <th>Name</th>
+        <th style="width:70%">Age</th>
+    </tr>
+    <tr>
+        <td>Sumair</td>
+        <td>28</td>
+    </tr>
+    <tr>
+        <td>Mudassar</td>
+        <td>25</td>
+    </tr>
+</table>
+
+<hr>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <td>Sumair</td>
+        <td>Mudassar</td>
+    </tr>
+    <tr>
+        <th>Age</th>
+        <td>28</td>
+        <td>25</td>
+    </tr>
+</table>
+
+<hr>
+
+<table>
+    <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Sumair</td>
+        <td>Saleem</td>
+        <td>28</td>
+    </tr>
+    <tr>
+        <td>Mudassir</td>
+        <td>Munir</td>
+        <td>25</td>
+    </tr>
+</table>
+
+<hr>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <td>Sumair</td>
+    </tr>
+    <tr>
+        <th rowspan="2">Phone</th>
+        <td>03001234567</td>
+    </tr>
+    <tr>
+        <td>03001234568</td>
+    </tr>
+</table>
+
+</body>
+</html>

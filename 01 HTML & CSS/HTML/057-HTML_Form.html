@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- target = _self, _blank, _parent, _top -->
+    <!-- method="get", "post" -->
+    <form action="#" target="_self" method="post" autocomplete="on">
+        <!-- <fieldset> element is used to group related data in a form -->
+        <fieldset>
+            <!-- The <legend> element defines a caption for the <fieldset> element. -->
+            <legend>Person Information</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <br>
+
+            <label for="status">Choose a status:</label>
+            <select id="status" name="status">
+                <option value="single">Single</option>
+                <option value="maried">Maried</option>
+            </select>
+
+            <br>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+
+            <br>
+
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+
+            <br><br>
+
+            <textarea name="message" rows="10" cols="30">
+                Comments area
+            </textarea>
+            
+            <br>
+
+
+            <input type="checkbox" id="check" name="check" value="Good">
+            <label for="check"> I have Read all the documents.</label><br><br>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+
+    </form>
+
+    <hr>
+
+<b>Notes on GET:</b>
+<ul>
+    <li>Appends the form data to the URL, in name/value pairs</li>
+    <li>NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)</li>
+    <li>The length of a URL is limited (2048 characters)</li>
+    <li>Useful for form submissions where a user wants to bookmark the result</li>
+    <li>GET is good for non-secure data, like query strings in Google</li>
+</ul>
+<br>
+<b>Notes on POST:</b>
+<ul>
+    <li>Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)</li>
+    <li>POST has no size limitations, and can be used to send large amounts of data.</li>
+    <li>Form submissions with POST cannot be bookmarked</li>
+</ul>
+
+<hr>
+
+<b>Autocomplete</b> <br>
+The autocomplete attribute specifies whether a form should have autocomplete on or off. <br>
+When autocomplete is on, the browser automatically complete values based on values that the user has entered before. 
+
+<hr>
+
+<b>Novalidate</b><br>
+The novalidate attribute is a boolean attribute.<br>
+When present, it specifies that the form-data (input) should not be validated when submitted. <br>
+<code>"form method='post' novalidate"</code>
+
+
+
+
+</body>
+</html>

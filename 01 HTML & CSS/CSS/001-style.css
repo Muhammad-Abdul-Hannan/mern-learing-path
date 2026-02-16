@@ -1,0 +1,33 @@
+h1 {
+    color: palevioletred;
+}
+
+
+
+
+
+/*External CSS
+<link rel="stylesheet" href="mystyle.css">
+
+
+Internal CSS
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+</style>
+</head>
+
+
+
+Inline CSS
+<h1 style="color:blue;text-align:center;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+*/

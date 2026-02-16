@@ -1,0 +1,1 @@
+new => whenever new keyword is used, it creats blank object.

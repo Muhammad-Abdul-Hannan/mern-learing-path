@@ -1,0 +1,14 @@
+Every thing in JS is truthy or falsy. 
+
+If you write something that is not true or false, what will happen. JS will check it is truthy or falsy? 
+
+Truthy: 
+
+
+Falsy: 0, false, undefined, null, NaN, document.all
+Ye sb values falsy mean false hen. Inky ilawa sb true/truthy he. 
+
+if(7) agr likha he to 7 falsy me nhi he is lye ise true consider kr lia jay ga.
+
+Truthy or Falsy tb dekha jata he jb condition ki expression true ya false result na dy.
+

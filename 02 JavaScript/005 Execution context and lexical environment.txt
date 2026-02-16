@@ -1,0 +1,19 @@
+Execution context: Every function contains its imagenary container that holds three things:
+1) variables
+2) functions inside it 
+3) lexical environment of that function
+
+
+Lexical Environment: What things/data can be accessed in this function and what can't. It containes scope and scope chain (scope of nested functions).
+
+function abcd(){
+    var a = 12;
+
+    function def(){
+        var b = 23;
+    }
+}
+
+now lexical environment of function abcd will bound abcd to not access b variable. Because var b ka scope apny function tk he.
+
+

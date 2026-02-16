@@ -1,0 +1,24 @@
+/* ------------- Padding -------------- */
+/* The CSS padding properties are used to generate space around an element's content, inside of any defined borders. */
+p {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+
+    padding: 25px 50px 75px 100px;       /*Shorthand property*/
+
+    width : 300px;
+    padding : 25px;
+    background-color: yellow;
+    box-sizing: border-box;             /* The width of this div not change */
+}
+
+
+/* All the padding properties can have the following values:
+
+length - specifies a padding in px, pt, cm, etc.
+% - specifies a padding in % of the width of the containing element
+inherit - specifies that the padding should be inherited from the parent element
+Note: Negative values are not allowed. */
+

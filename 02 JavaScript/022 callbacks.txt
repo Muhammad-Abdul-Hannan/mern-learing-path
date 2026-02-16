@@ -1,0 +1,17 @@
+in async js fetch, axios, setTimout, setInterval etc will send the code/data to run process.
+When this process is done, who will execute the code dependent on this process.
+Here we use:
+then catch
+callbacks
+async await
+
+so, callback is the function that execute only when the async code is completed.
+
+syntax: setTimeout(callback, time in miliseconds)
+
+setTimeout(function(){
+
+}, 10000)
+
+so function above is callback function that will run after setTimeout is completed within 10 seconds.
+

@@ -1,0 +1,7 @@
+Browser context api contains window, stack and heap memory.
+A browsing context is an environment in which a browser displays a Document. In modern browsers, it usually is a tab, but can be a window or even only parts of a page, like a frame or an iframe.
+
+
+Stack: It holds the order of execution.
+
+Heap memory: All variables/data stored in temporary memory called heap. Expression: a + b + c. First a+b is stored in heap then added to c.

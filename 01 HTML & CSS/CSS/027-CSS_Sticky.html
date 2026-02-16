@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky</title>
+
+<style>
+
+    body {
+        background: #030018;
+        color: #ffffff;
+        padding: 20px;
+    }
+
+    div {
+        padding: 20px; 
+        font-size: 1.5rem;
+        overflow: hidden;
+        margin: 0;
+        min-height: 150px;  
+        font-size: 1.25rem;
+        line-height: 1.5;
+        letter-spacing: 3px;
+        font-weight: normal;
+    }
+    .purple{ 
+        background-color: #292477;
+    }
+    .green {
+        background-color: #13693B;
+    }
+    .first {  
+        /* position: relative; */
+    }
+
+    .another {
+        position: sticky;  
+        top: 0px;
+    }
+    .another2 {
+        position: sticky;  
+        bottom: 0px;
+    }
+
+
+</style>
+</head>
+<body>
+
+    
+
+    <div class="First purple">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec nunc non eros malesuada pulvinar. Phasellus a efficitur sem. Cras lorem odio, pretium eget diam ac, pulvinar interdum felis. Ut commodo mi purus. Morbi rutrum felis felis, eu ornare nisl mattis sed. Vivamus erat arcu, blandit vel odio a, auctor sollicitudin velit. Aliquam venenatis, risus in molestie gravida, arcu orci volutpat turpis, a imperdiet sapien massa sit amet odio. Donec neque justo, pretium eget risus a, finibus auctor ex. Donec vel finibus enim. Ut consequat, lorem sed viverra ultrices, sapien augue finibus tortor, a efficitur enim sapien luctus ex. In varius varius nisl ac mollis.
+      
+        Vivamus fermentum massa non lorem fringilla rhoncus sit amet non enim. Donec volutpat nisl non ligula vestibulum, eu placerat urna euismod. Praesent scelerisque neque id porttitor sodales. Praesent fermentum tellus eget purus maximus, ac tristique dui lobortis. Aliquam auctor lorem vel nibh consectetur rhoncus. Donec at varius tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas eget urna lorem. Suspendisse potenti. Aenean a lorem tincidunt, consectetur turpis iaculis, condimentum enim. Pellentesque scelerisque a sem viverra suscipit. Aliquam erat volutpat. In tortor eros, venenatis a ullamcorper ut, tempor nec dolor. Suspendisse finibus erat libero, ac aliquet turpis posuere a. Integer ut nisl tincidunt, ullamcorper dolor quis, ornare felis. In dignissim nibh at convallis viverra.
+        
+        Aenean mattis quam sit amet quam commodo venenatis. Morbi nec enim eget lorem fermentum consectetur. Sed venenatis ipsum eu sodales laoreet. Vivamus vitae velit aliquet, feugiat magna et, feugiat lorem. Ut cursus porta diam vel blandit. Fusce dapibus dignissim augue, at convallis tortor pellentesque vitae. Donec blandit consequat ligula nec maximus. Aenean eu sem cursus, lobortis nisi ac, tempor nisl.
+    </div>
+      
+    <div class="another green">
+        Ha ha! Scrolling can't get rid of me!! Sticky from top
+    </div>
+
+    <div class="purple">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec nunc non eros malesuada pulvinar. Phasellus a efficitur sem. Cras lorem odio, pretium eget diam ac, pulvinar interdum felis. Ut commodo mi purus. Morbi rutrum felis felis, eu ornare nisl mattis sed. Vivamus erat arcu, blandit vel odio a, auctor sollicitudin velit. Aliquam venenatis, risus in molestie gravida, arcu orci volutpat turpis, a imperdiet sapien massa sit amet odio. Donec neque justo, pretium eget risus a, finibus auctor ex. Donec vel finibus enim. Ut consequat, lorem sed viverra ultrices, sapien augue finibus tortor, a efficitur enim sapien luctus ex. In varius varius nisl ac mollis.
+        
+        Vivamus fermentum massa non lorem fringilla rhoncus sit amet non enim. Donec volutpat nisl non ligula vestibulum, eu placerat urna euismod. Praesent scelerisque neque id porttitor sodales. Praesent fermentum tellus eget purus maximus, ac tristique dui lobortis. Aliquam auctor lorem vel nibh consectetur rhoncus. Donec at varius tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas eget urna lorem. Suspendisse potenti. Aenean a lorem tincidunt, consectetur turpis iaculis, condimentum enim. Pellentesque scelerisque a sem viverra suscipit. Aliquam erat volutpat. In tortor eros, venenatis a ullamcorper ut, tempor nec dolor. Suspendisse finibus erat libero, ac aliquet turpis posuere a. Integer ut nisl tincidunt, ullamcorper dolor quis, ornare felis. In dignissim nibh at convallis viverra.
+        
+        Aenean mattis quam sit amet quam commodo venenatis. Morbi nec enim eget lorem fermentum consectetur. Sed venenatis ipsum eu sodales laoreet. Vivamus vitae velit aliquet, feugiat magna et, feugiat lorem. Ut cursus porta diam vel blandit. Fusce dapibus dignissim augue, at convallis tortor pellentesque vitae. Donec blandit consequat ligula nec maximus. Aenean eu sem cursus, lobortis nisi ac, tempor nisl.
+    </div>
+    <div class="another2 green">
+        Ha ha! Scrolling can't get rid of me!! Sticky from bottom
+    </div>
+    <div class="purple">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec nunc non eros malesuada pulvinar. Phasellus a efficitur sem. Cras lorem odio, pretium eget diam ac, pulvinar interdum felis. Ut commodo mi purus. Morbi rutrum felis felis, eu ornare nisl mattis sed. Vivamus erat arcu, blandit vel odio a, auctor sollicitudin velit. Aliquam venenatis, risus in molestie gravida, arcu orci volutpat turpis, a imperdiet sapien massa sit amet odio. Donec neque justo, pretium eget risus a, finibus auctor ex. Donec vel finibus enim. Ut consequat, lorem sed viverra ultrices, sapien augue finibus tortor, a efficitur enim sapien luctus ex. In varius varius nisl ac mollis.
+        
+        Vivamus fermentum massa non lorem fringilla rhoncus sit amet non enim. Donec volutpat nisl non ligula vestibulum, eu placerat urna euismod. Praesent scelerisque neque id porttitor sodales. Praesent fermentum tellus eget purus maximus, ac tristique dui lobortis. Aliquam auctor lorem vel nibh consectetur rhoncus. Donec at varius tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas eget urna lorem. Suspendisse potenti. Aenean a lorem tincidunt, consectetur turpis iaculis, condimentum enim. Pellentesque scelerisque a sem viverra suscipit. Aliquam erat volutpat. In tortor eros, venenatis a ullamcorper ut, tempor nec dolor. Suspendisse finibus erat libero, ac aliquet turpis posuere a. Integer ut nisl tincidunt, ullamcorper dolor quis, ornare felis. In dignissim nibh at convallis viverra.
+        
+        Aenean mattis quam sit amet quam commodo venenatis. Morbi nec enim eget lorem fermentum consectetur. Sed venenatis ipsum eu sodales laoreet. Vivamus vitae velit aliquet, feugiat magna et, feugiat lorem. Ut cursus porta diam vel blandit. Fusce dapibus dignissim augue, at convallis tortor pellentesque vitae. Donec blandit consequat ligula nec maximus. Aenean eu sem cursus, lobortis nisi ac, tempor nisl.
+    </div>
+
+</body>
+</html>

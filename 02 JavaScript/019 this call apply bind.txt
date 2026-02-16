@@ -1,0 +1,90 @@
+this is global and local scope:
+
+Global scope: when variable is not inside {} it is said to be global scope.
+
+Local scope: When variable is inside {} it is said to be in local scope.
+
+In global scope: 
+console.log(this) // this return window
+
+In function scope:
+console.log(this) // this return window
+
+function abcd(){
+    console.log(this);
+}
+
+in method scope: any function inside object is known as method.
+var obj = {
+    name: "Ali",
+    abcd: function(){
+        console.log(this)
+    }
+}
+obj.abcd();
+
+Here this return object.
+
+
+IMPORTANT: in any method 'this' keyword always refer to parent object.
+
+
+
+in event listner:
+var button = document.querySelector("button");
+button.addEventListener("click", function(){
+    console.log(this);
+    this.style.color = 'red';
+})
+this keyword is equal to whatever written before addEventListener, in this case is button.
+
+
+=========================================
+
+Call, Apply and Bind: When you want to change the value of 'this', we use call, apply and bind methods.
+
+For example: you have a function and an object. You want to run the function and you want to refer 'this' to object instead of window (window is by default see above in function scope).
+
+function abcd(){
+    console.log(this.age);
+}
+
+var obj = {
+    age: 24;
+}
+
+abcd.call(obj); // here we bound 'this' to refer to object obj. So, this.age will give 24.
+
+What if you have aurguments to pass to function.
+
+function abcd(val1, val2){
+    console.log(this.age);
+}
+var obj = {
+    age: 24;
+}
+
+abcd.call(obj, 23, 45) // now obj will goto 'this', 23 to val1 and 45 to val2.
+
+Apply: in apply method aurguments are sent in array. So, above function will be called with statement like:
+abcd.apply(obj, [23, 45]);
+
+
+Bind: bind method just bind the function and object but not run it. You will need to store it (binded function and object) into variable and then run it.
+
+function abcd(val1, val2){
+    console.log(this);
+}
+var obj = {
+    age: 24;
+}
+
+abcd.bind(obj);
+
+above statement will not run. It will just bind. To run you will need statement like:
+
+var bindedfnc = abcd.bind(obj);
+bindedfnc(); // it will run the function binded with object.
+
+
+

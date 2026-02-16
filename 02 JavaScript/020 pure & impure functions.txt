@@ -1,0 +1,18 @@
+Pure function: any function with two features:
+
+1: it return same output for same input everytime.
+2: it will never change value of global variable.
+
+function abcd(){
+    console.log(a*b);
+}
+abcd(1,2);
+
+
+impure function: this will return different due to random value selected.
+function abcd(a){
+    console.log(Math.random()*a);
+}
+
+abcd(2);
+

@@ -1,0 +1,22 @@
+/* ----------- Margin ------------- */
+
+p {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+
+    margin: 25px; 
+    margin: 25px 50px;
+    margin: 25px 50px 75px 100px;
+
+    margin: auto;
+    margin-left: inherit;
+
+    margin: 0 0 50px 0;
+    
+}
+/* The margin-top CSS property sets the margin area on the top of an element. A positive value places it farther from its neighbors, while a negative value places it closer. */
+
+/* You can set the margin property to auto to horizontally center the element within its container. */
+

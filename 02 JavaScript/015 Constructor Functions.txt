@@ -1,0 +1,32 @@
+The function that include use of 'this' and you use the 'new' keyword while using this function is known as constructor function.
+When you need multiple elements with same properties you can use constructor function.
+or
+
+A function which whenever called with new keyword return an object, if we use this keyword inside that function, it returns an object with all of the properties and methods mentioned inside that function with This keyword, such functions are called constructor functions.
+
+
+function saanchaOfBiscuit(){
+    this.width = 12;
+    this.height = 22;
+    this.color = "brown";
+    this.taste = "sugary";
+}
+
+var bis1 = new saanchaOfBiscuit();
+var bis2 = new saanchaOfBiscuit();
+var bis3 = new saanchaOfBiscuit();
+
+
+or
+
+function cirBtn(color){
+    this.radius = 2;
+    this.color = color;
+    this.icon = false;
+    this.pressable = true;
+}
+
+var btn1 = new cirBtn("red");
+var btn2 = new cirBtn("green");
+
+

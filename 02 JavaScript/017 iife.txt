@@ -1,0 +1,21 @@
+iife => immediately invoked function expression.
+It means executing function immediately in such a way that we create private variable. it is function inside ().
+Below is privateVal variable. It is private variable that can't be accessed outside the function. For accessing it outside, we use getter in return.
+
+var ans = (function(){
+    var privateVal = 12;
+
+    return {
+        getter: function(){
+            console.log(privateVal);
+        }
+    },
+    setter: function(val){
+        privateVal = val;
+    }
+    // here setter is used to change value of private variable.
+})()
+
+ans.getter()
+
+ans.setter(22)

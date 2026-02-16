@@ -1,0 +1,60 @@
+/* ------------ Link -------------- */
+
+a {
+    color: burlywood;
+    text-decoration: none;
+    text-decoration: underline;
+    background-color: lightgreen;
+    
+    cursor: auto;
+    cursor: crosshair;
+    cursor: default;
+    cursor: e-resize;
+    cursor: help;
+    cursor: move;
+    cursor: n-resize;
+    cursor: ne-resize;
+    cursor: nw-resize;
+    cursor: pointer;
+    cursor: progress;
+    cursor: s-resize;
+    cursor: se-resize;
+    cursor: sw-resize;
+    cursor: text;
+    cursor: w-resize;
+    cursor: wait;
+}
+
+
+a:link { color: red; }                   /* unvisited link */
+a:visited { color: green; }             /* visited link */
+a:hover { color: hotpink; }             /* mouse over link */
+a:active { color: blue; }               /* selected link */
+
+/* Example 1 */
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+a:hover, a:active { background-color: red; }
+
+/* Example 2 */
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+a:hover, a:active {
+    background-color: green;
+    color: white;
+}

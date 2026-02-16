@@ -1,0 +1,40 @@
+/* ---------------- Translate ------Change position of object--------- */
+
+div {
+    transform: translate(50px, 100px);
+}
+ 
+/* ---------------- Rotate --------------- */
+div {
+    transform: rotate(20deg);
+    transform: rotate(-20deg);
+}
+
+
+/* ---------------- Scale ----- Stretch---------- */
+
+div {
+    transform: scale(2, 3);
+    transform: scale(0.5, 0.5);
+
+    transform: scaleX(2);
+    transform: scaleX(0.5);
+    transform: scaleY(3);
+    transform: scaleY(0.5);
+}
+
+/* ---------------- Skew ------- Diagonal change-------- */
+div {
+    transform: skewX(20deg);
+    transform: skewY(20deg);
+    transform: skew(20deg, 10deg);
+    transform: skew(20deg);
+}
+
+
+
+/* ---------------- Matrix --------------- */
+/* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+div {
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+}

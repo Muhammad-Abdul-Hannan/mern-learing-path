@@ -1,0 +1,66 @@
+/* ----------- Combinators ----------- */
+ 
+div p {
+    background-color: yellow;
+}
+
+/* <div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section><p>Paragraph 3 in the div.</p></section>
+</div> */
+
+
+/* The :first-of-type selector in CSS allows you to target the first occurence of an element within its container.  */
+/*
+<article>
+  <h1>A Title</h1>
+  <p>Paragraph 1.</p>
+  <p>Paragraph 2.</p>
+  <p>Paragraph 3.</p>
+</article>
+*/
+p:first-of-type {
+  font-size: 1.25em;
+}
+
+
+div > p {                               /* Child Selector (>) */
+    background-color: yellow;
+}
+
+/* <div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section>
+    <!-- not Child but Descendant -->
+    <p>Paragraph 3 in the div (inside a section element).</p>
+  </section>
+</div> */
+
+
+
+div + p {                               /* Adjacent Sibling Selector (+) */
+    background-color: yellow;
+}  
+
+/* <div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+<p>Paragraph 3. After a div.</p>
+<p>Paragraph 4. After a div.</p> */
+
+
+
+
+div ~ p {                               /* General Sibling Selector (~) */
+    background-color: yellow;
+}
+
+/* <div>
+  <p>Paragraph 1.</p>
+</div>
+<p>Paragraph 2.</p>
+<code>Some code.</code>
+<p>Paragraph 3.</p> */

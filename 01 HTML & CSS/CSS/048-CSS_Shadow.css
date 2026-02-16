@@ -1,0 +1,34 @@
+
+/* --------------- Text Shadow ----------------- */
+
+h1 {
+    text-shadow: 2px 2px;           /* horizontal (2px), vertical (2px) */
+
+    text-shadow: 2px 2px red;
+
+    text-shadow: 2px 2px 5px red;   /* 5px blur */
+
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+
+}
+
+
+/* --------------- Box Shaodow ---------------- */
+
+div {
+    box-shadow: 10px 10px;
+    box-shadow: 10px 10px grey;
+    box-shadow: 10px 10px 5px grey;
+    box-shadow: 10px 10px 5px 12px grey;
+
+    box-shadow: 10px 10px 5px grey inset;
+    box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}

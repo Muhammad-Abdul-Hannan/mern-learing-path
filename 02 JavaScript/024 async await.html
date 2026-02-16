@@ -1,0 +1,40 @@
+// async await is just used to avoid 'then' code block.
+
+// example: below in script tag.
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // without async await will be:
+        function abcd() {
+            fetch(`https://randomuser.me/api/`) //fetch is used to fetch the data from url.
+                .then(function (raw) { // this line is executed on resolved case and fetch will give output in raw variable.
+                    return raw.json(); // fetch output is not well structured, so raw.json will make it in json format (readable).
+                })
+                .then(function (data) {
+                    console.log(data);  //here the readable format data is stored to data variable.
+                })
+        }
+        abcd();
+
+
+        // with async wait will be:
+        async function abcd() {
+            let raw = await fetch(`https://randomuser.me/api/`) //fetch ka data ay ga or jb tk response nhi ata wait kry ga... jb ay ga to raw me store hoga.
+            let ans = await raw.json() // idhr await is lye lgya q k raw me forn data nhi ana lekin bgher await k ye line forn execute ho jay gi. is lye await lgya taky jb tk raw me data na ay ye line na chly.
+            console.log(ans);
+        }
+        abcd();
+    </script>
+</body>
+
+</html>

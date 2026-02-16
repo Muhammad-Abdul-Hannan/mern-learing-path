@@ -1,0 +1,24 @@
+/* ----------- Text --------------- */
+
+p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+
+    text-overflow: ellipsis;
+}
+
+p:hover {
+    overflow: visible;
+}
+
+
+p {
+    word-wrap: break-word;
+    word-break: keep-all;
+    word-break: break-all;
+
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}

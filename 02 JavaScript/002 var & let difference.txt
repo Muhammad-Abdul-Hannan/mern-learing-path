@@ -1,0 +1,21 @@
+var and let difference:
+var is from es5. let and const is from es6.
+var is function scoped. let braces scoped.
+
+function abcd(){
+    var a = 12;
+    // this a can be used anywhere in this function.
+
+    for(var i = 1; i<12; i++){
+        console.log(i);
+    }
+    console.log(i); // this result in 12.
+    // this i will also be printed. Var can be used in its parent function anywhere. Mean i is not bound to for loop. i can be used anywhere inside abcd().
+
+    for(let j=1; j<12; j++){
+        console.log(j);
+    }
+    console.log(j); //this will make error. let j can be just used in for loop braces.
+}
+var add itself to window object.
+let and const doesn't adds to window object.

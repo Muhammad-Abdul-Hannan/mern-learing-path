@@ -1,0 +1,12 @@
+/* https://www.1001freefonts.com/ */
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(MotionPicture_PersonalUseOnly.ttf);
+    font-weight: bold;
+}
+  
+div {
+    font-family: myFirstFont;
+}
+

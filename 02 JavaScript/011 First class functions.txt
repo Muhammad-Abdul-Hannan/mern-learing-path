@@ -1,0 +1,15 @@
+When function is used as a value, it is called first class function. When the function is treated as variable (you can save them, you can pass them as argument), this is known as first class function.
+
+var a = function(){
+    code;
+};
+
+or
+
+function abcd(a){
+    a();
+    // here a is a function because we have passed function as prameter.
+}
+
+abcd(function(){console.log("yes");})
+

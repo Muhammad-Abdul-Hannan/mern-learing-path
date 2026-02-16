@@ -1,0 +1,43 @@
+When the async code is processing, it can result in resolve or reject state. Mean the request may be fulfilled or not.
+If it is resolved, 'then' code will be executed.
+If it is rejected, 'catch' code will be executed.
+
+Promise always accept a function. Promise is a constructor fucntion so we write 'new' before it.
+
+example:
+
+var ans = new Promise((res, rej) => {
+    if(true){
+        return res();
+    }
+    else{
+        return rej();
+    }
+})
+
+ans
+.then(function(){
+    console.log('resolved');
+})
+.catch(function(){
+    console.log('rejected');
+})
+
+
+You can also create Promise inside other Promise.
+
+var ans = new Promise(function(res, rej){
+    return res("come to home");
+})
+var ans2 = ans.then(function(data){
+    console.log(data);
+    return new Promise(function(res, rej){
+        return res("gate lock kro");
+    })
+})
+
+p2.then(function(data){
+    console.log(data);
+})
+
+Here first Promise will execute and we assume only resolve is executed, so its output will be sent to data. then nested Promise is executed and its resolve is executed. This way you can nest any level of Promises.

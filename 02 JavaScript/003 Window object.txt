@@ -1,0 +1,8 @@
+JS does not contain all functions/features. It borrows the freatures from window/browser and use it.
+window contains many more features that are used by JS.
+
+example: alert, print, prompt all these are window features.
+
+type in console:
+window and press enter you will see all features/functions of window object.
+If you declare and define a var it is also added to this window object. This is against security so let and const does not add to window object.

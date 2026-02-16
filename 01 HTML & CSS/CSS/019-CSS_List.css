@@ -1,0 +1,25 @@
+/* --------------- List --------------- */
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+    list-style-type: circle;
+    list-style-type: square;
+
+    list-style-position: outside;
+    list-style-position: inside;
+
+    list-style-image: url('Picture/sqpurple.gif');
+
+    list-style: square inside url("sqpurple.gif");
+}
+
+ol {
+    list-style-type: upper-roman;
+    list-style-type: lower-alpha;
+}
+
+
+

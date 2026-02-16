@@ -1,0 +1,12 @@
+Arrays are treated as object behind the scene.
+
+var arr = [1,2,3];
+
+JS will convert it into object like:
+arr = {
+    0: 1,
+    1: 2,
+    2: 3
+}
+// Here it is key value pair. 0,1,2 are indexes/keys of objects.
+

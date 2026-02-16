@@ -1,0 +1,21 @@
+Higher order function: The function which accept the function as argument or return the function is known as higher order function.
+
+
+function abcd(val){
+
+}
+
+abcd(function(){})
+
+or 
+
+function abcd(){
+    return function(){
+
+    }
+}
+
+abcd()
+
+
+forEach function/method always take function inside it. So, forEach is higher order function.

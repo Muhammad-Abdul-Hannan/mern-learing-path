@@ -1,0 +1,21 @@
+/* ------------- Transparent --------------- */
+
+div {
+    background-color: transparent;
+}
+
+
+/* --------------- Current Color --------------- */
+
+body {
+    color: purple;
+}
+
+div {
+    background-color: currentcolor;
+    padding: 15px;
+    color: white;
+}
+
+
+

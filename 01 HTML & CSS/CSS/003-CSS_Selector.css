@@ -1,0 +1,14 @@
+/* ---------- Selector -------------- */
+
+h1      {color: #000;}              /* Simple Selector */
+*       {color: lightblue;}         /* Universal Selector */
+#id_1   {color: red;}               /* Id Selector */
+.para2  {color: lightblue;}         /* class Selector */
+p.para2 {color: coral;}             /* class Selector */
+h1, h2  {color: darkgreen;}         /* Grouping Selector */
+div h2.class  {color: darkgreen;}   /* Grouping Selector ---- select h2 with specific class in div*/
+
+
+
+
+

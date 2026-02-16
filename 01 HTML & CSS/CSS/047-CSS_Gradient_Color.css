@@ -1,0 +1,45 @@
+
+/* ---------------- Gradient Color -------------------  */
+
+#grarient{
+    /* Top to Bottom */
+    background-image: linear-gradient(red, yellow);     
+    /* left to right */
+    background-image: linear-gradient(to right, red , yellow);
+    /* top left to bottom right */
+    background-image: linear-gradient(to bottom right, red, yellow);
+    /* Using angle */
+    background-image: linear-gradient(180deg, red, yellow);
+    /* Multiple color */
+    background-image: linear-gradient(red, yellow, green);
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    /* Using Transparency */
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+
+
+#radial {
+    background-image: radial-gradient(red, yellow, green);
+    background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+
+    background-image: radial-gradient(circle, red, yellow, green);
+
+}
+
+
+#conic {
+    background-image: conic-gradient(red, yellow, green);
+    background-image: conic-gradient(red, yellow, green, blue, black);
+    background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+
+    background-image: conic-gradient(red, yellow, green, blue, black);
+    border-radius: 50%;
+
+    background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+    border-radius: 50%;
+
+    background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+    border-radius: 50%;
+
+    
+}

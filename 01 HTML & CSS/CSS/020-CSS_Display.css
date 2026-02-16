@@ -1,0 +1,40 @@
+/* -------------- Display --------------- */
+
+/* block element covers full area */
+/* inline element covers area it needs */
+div {
+    display: inline;
+}
+
+span {
+    display: block;
+}
+
+div {
+    display: none;                      /* Remove the space */
+    visibility: hidden;                 /* Only hide but space show */
+}
+
+/*
+Value               Description
+inline              Displays an element as an inline element. Any height and width properties will have no effect
+
+block               Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width
+
+contents            Makes the container disappear, making the child elements children of the element the next level up in the DOM
+
+flex                Displays an element as a block-level flex container
+
+grid                Displays an element as a block-level grid container
+
+inline-block        Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values
+
+inline-flex         Displays an element as an inline-level flex container
+
+inline-grid         Displays an element as an inline-level grid container
+
+none	            The element is completely removed
+
+initial             Sets this property to its default value.
+
+inherit             Inherits this property from its parent element.

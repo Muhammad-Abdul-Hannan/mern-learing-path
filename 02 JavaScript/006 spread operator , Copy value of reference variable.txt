@@ -1,0 +1,10 @@
+var a = [1,2,3,4];
+var b = [...a]
+Here ... is spread operator. This means copy all values of a.
+
+As here values are copied, so b.pop() will not effect a.
+
+var obj = { name: "Ali"};
+var copyobj = {...obj};
+Here copyobj get values of obj object.
+

@@ -1,0 +1,22 @@
+/* -------------Background Color ------------- */
+
+body {
+    
+    background-color: lightblue;
+    background-image: url("img_tree.png");
+
+    background-repeat: repeat-x;        /* Horizontal Repeat Image*/
+    background-repeat: repeat-y;        /* Vertically Repeat Image*/
+
+    background-repeat: no-repeat;
+    background-position: right top;
+
+    background-attachment: fixed;
+    background-attachment: scroll;
+    background-attachment: local;
+
+    background: rgba(0, 128, 0, 0.3);
+
+    background: #ffffff url("img_tree.png") no-repeat right top;
+
+}

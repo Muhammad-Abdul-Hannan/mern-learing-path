@@ -1,0 +1,60 @@
+/* --------------- Text --------------- */
+
+h1 {
+    color: blue;
+    background-color: black;
+
+    text-align: center;
+    text-align: left;
+    text-align: right;
+    text-align: justify;
+
+    text-align-last: center;
+    text-align-last: left;
+    text-align-last: right;
+    text-align-last: justify;
+
+    text-decoration: none;
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration: underline;
+
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+
+    text-indent: 50px;                  /* First Line of paragraph.*/
+
+    letter-spacing: 5px;                /* Space between alphabet. */
+    letter-spacing: -2px;               /* Space between alphabet. */
+
+    line-height: 0.8;
+    line-height: 1.8;
+
+    word-spacing: 10px;
+    word-spacing: -2px;
+
+    white-space: nowrap;                    /* All Text in single line. */
+
+
+    text-shadow: 2px 2px;                   /* Horizontal shadow (2px), Verticle shadow (2px) */
+    text-shadow: 2px 2px red;
+    text-shadow: 2px 2px 5px red;           /* Blur Affect (5px) */
+
+
+    
+    /* Example 1 */
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+
+    /* Example 2 */
+    text-shadow: 0 0 3px #ff0000;
+
+    /* Example 3 */
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+
+    /* Example 4 */
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+}

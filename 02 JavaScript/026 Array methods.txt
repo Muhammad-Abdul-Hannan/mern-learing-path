@@ -1,0 +1,90 @@
+There are too many functions on array. About 45. Some important are below:
+
+
+Map: map creates a new array by calling function for every array element.
+const arr = [1,2,3,4,5];
+const results = arr.map(function(val){
+    return val * 10;
+})
+
+
+Entries: The entries() method returns an Iterator object with the key/value pairs from an array:
+// Create an Array
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// Create an Iterator
+const list = fruits.entries();
+
+// List the Entries
+let text = "";
+for (let x of list) {
+  text += x;
+}
+
+output:
+0,Banana
+1,Orange
+2,Apple
+3,Mango
+
+
+
+Every: every method execute the function for each array element. It returns false if any one function call returns false. If all function calls returns true, 'every' return true.
+
+// Create an Array
+const ages = [32, 33, 16, 40];
+
+// Create a Test Function
+function checkAge(age) {
+  return age > 18;
+}
+
+// Are all ages over 18?
+ages.every(checkAge);
+
+Here it will return false as 16 < 18.
+
+
+
+
+Filter: filter method returns only those elements that passes the test of called function.
+const ages = [32, 33, 16, 40];
+const result = ages.filter(checkAdult);
+
+function checkAdult(age) {
+  return age >= 18;
+}
+
+now results = [32, 33, 40]
+
+
+
+forEach: forEach method calls function for each value of array.
+const fruits = ["apple", "orange", "cherry"];
+fruits.forEach(myFunction);
+
+
+The keys() method returns an Iterator object with the keys of an array. Not supported in Internet Explorer.
+// Create an Array
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// Create an Iterable
+const list = fruits.keys();
+
+// List the Keys
+let text = "";
+for (let x of list) {
+  text += x + "<br>";
+}
+
+
+
+Find: find method returns the first occurance of array (first element) that passes the function test. If no element is passed, it retuns undefined.
+
+
+
+
+
+
+
+NOTE: All above functions does not change the orginal array.

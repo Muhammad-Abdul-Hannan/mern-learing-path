@@ -1,0 +1,47 @@
+/* -------- Border Radius --------- */
+
+#rcorners1 {
+    border-radius: 25px;
+    border-radius: 15px 50px 30px 5px;
+    border-radius: 15px 50px 30px;
+    border-radius: 15px 50px;
+    border-radius: 15px;
+
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+/* ------------ Border Image ----------- */
+/* border-image: source slice width outset repeat|initial|inherit; */
+
+#borderimg {
+    border: 10px solid transparent;
+    padding: 15px;
+    
+    border-image: url(border.png) 30 round;
+    border-image: url(border.png) 30 stretch;
+
+
+    border-image: url(border.png) 50 round;
+    border-image: url(border.png) 20% round;
+    border-image: url(border.png) 30% round;
+}
+
+
+/* ------------- Background Image -------------- */
+
+#example1 {
+    background-image: url(img_flwr.gif), url(image_tree.png);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+
+    background-size: 100px 80px;
+}
+
+/* or */
+
+#example1 {
+    background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+  }

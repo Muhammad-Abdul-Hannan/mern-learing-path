@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Attribute</title>
+</head>
+<body>
+
+<form action="" autocomplete="on">
+    <h3>The autocomplete Attribute</h3>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" autocomplete="off">
+
+    <h3> The value Attribute </h3>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="Ali Raza">
+
+    <h3>The autofocus Attribute</h3>
+    <label for="name">First name:</label>
+    <input type="text" id="name" name="name" autofocus>
+
+    <h3>The readonly Attribute</h3>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="Ali Raza" readonly>
+
+    <h3>The disabled Attribute</h3>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="Ali Raza" disabled>
+
+    <h3>The required Attribute</h3>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <h3>The size Attribute</h3>
+    <label for="pin">PIN:</label>
+    <input type="text" id="pin" name="pin" size="4">
+
+    <h3>The maxlength Attribute</h3>
+    <label for="pin">PIN:</label>
+    <input type="text" id="pin" name="pin" maxlength="4" size="4">
+
+    <h3>The min and max Attributes</h3>
+    <label for="quantity">Quantity (between 1 and 5):</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5">
+
+    <br>
+    <label for="datemin">Enter a date after 2000-01-01:</label>
+    <input type="date" id="datemin" name="datemin" min="2000-01-02">
+
+    <h3>The multiple Attribute</h3>
+    <label for="files">Select files:</label>
+    <input type="file" id="files" name="files" multiple>
+
+    <h3>The pattern Attribute</h3>
+    <label for="country_code">Country code:</label>
+    <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{2}" title="Two letter country code">
+
+    <h3>The placeholder Attribute</h3>
+    <label for="phone">Enter a phone number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="0312-1234567" pattern="03[0-9]{2}-[0-9]{7}">
+
+    <h3>The step Attribute</h3>
+    <label for="points">Points:</label>
+    <input type="number" id="points" name="points" step="3">
+
+    <h3>The height and width Attributes</h3>
+    <input type="image" src="039-images.jpeg" alt="Submit" width="100" height="100">
+
+    <h3>The list Attribute</h3>
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+
+    <br>
+
+    <input type="submit">
+
+</form>
+</body>
+</html>

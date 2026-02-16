@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Attribute</title>
+</head>
+<body>
+
+    <h3>The formaction Attribute</h3>
+
+    <!-- <form action="/action_page.php" novalidate> -->
+    <form action="#" method="post">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" required><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <input type="submit" value="Submit">
+        <h3>formataction</h3>
+        <input type="submit" formaction="##" value="Submit 2">
+        <h3>formatarget</h3>
+        <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+        <h3>The formnovalidate Attribute</h3>
+        <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+    </form>
+
+    <hr>
+
+    <h3>The formmethod Attribute</h3>
+    <ul>
+        <h4>Get Method</h4>
+        <li>This method appends the form-data to the URL in name/value pairs</li>
+        <li>This method is useful for form submissions where a user want to bookmark the result</li>
+        <li>There is a limit to how much data you can place in a URL (varies between browsers), therefore, you cannot be sure that all of the form-data will be correctly transferred</li>
+        <li>Never use the "get" method to pass sensitive information! (password or other sensitive information will be visible in the browser's address bar)</li>
+    </ul>
+    <ul>
+        <h4>Post Method</h4>
+        <li>This method sends the form-data as an HTTP post transaction</li>
+        <li>Form submissions with the "post" method cannot be bookmarked</li>
+        <li>The "post" method is more robust and secure than "get", and "post" does not have size limitations</li>
+    </ul>
+    
+</body>
+</html>

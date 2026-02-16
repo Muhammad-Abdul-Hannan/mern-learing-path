@@ -1,0 +1,10 @@
+callback functions: any code that run/execute after some event/time, JS does not know it is completed or not, so this code/function tells JS that it(event or time) is completed. this is called callback. Mean telling JS that I am ready to run my event has occured.
+
+
+example:
+setTimeout(function(){
+    code to run after 2 sec.
+}, 2000);
+Here setTimeout mean run function after 2 seconds.
+
+Now, when 2 seconds will be completed, callback function will tell JS that run this code.
