@@ -1,0 +1,222 @@
+# ============================================================
+# GIT CHEATSHEET (WORKING WITH A TEAM) — step-by-step + purpose
+# Copy/paste into your notes.
+# Assumption: team uses GitHub + Pull Requests + main branch protected
+# ============================================================
+
+
+# ----------------------------
+# Main Person (manager) will make files in his laptop. Like html, css, js etc folder structure with boilerplate etc.
+# ----------------------------
+He will put all code on github. goto github > add repository ... Private or Public...
+Github will give you some steps. Follow them to create README.md
+git init (same as you do in vs code side bar "Initialize Git").
+git add README.md ( or do "git add ." so all files get added / tracked ).
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/username/reponame.git (this will upload this (local) repository to that url (github) repository).
+git push -u origin main
+
+
+Now if you refresh github, you will see all local files there.
+
+
+Now add collaborators from Settings tab.
+
+# ----------------------------
+# 0) First time (get the code as team member (collaborator). If you was the one who created the repo in above step, you don't need this step as you already have that)
+# ----------------------------
+
+# Purpose: download the repo to your PC (creates project folder)
+git clone <repo_url>
+cd <project_folder>
+
+# Purpose: see remote names (usually "origin")
+git remote -v
+
+# Purpose: check your current branch (should be main after clone)
+git branch
+
+# ---------------------------------------
+# 1) Always start your day: update main
+# ---------------------------------------
+
+# Purpose: switch to main
+git checkout main
+# or: git switch main
+
+# Purpose: get latest main from GitHub
+git pull origin main
+
+
+# --------------------------------------------
+# 2) Create your own branch BEFORE coding
+# --------------------------------------------
+
+# Purpose: create a new branch from updated main
+git checkout -b feature/<short-name>
+# examples:
+# git checkout -b feature/login-form
+# git checkout -b fix/navbar-bug
+# git checkout -b chore/update-readme
+
+# Purpose: confirm you’re on your branch
+git branch
+
+
+# ---------------------------------------
+# 3) Daily work cycle (on your branch)
+# ---------------------------------------
+
+# Purpose: check what changed
+git status
+
+# Purpose: view changes
+git diff
+
+# Purpose: stage changes
+git add .
+# or stage one file:
+# git add <file_name>
+
+# Purpose: commit your changes (small, meaningful commits)
+git commit -m "Add login UI"
+git commit -m "Validate email and password"
+
+# Purpose: push your branch to GitHub (first push)
+git push -u origin feature/<short-name>
+
+# Next pushes:
+git push
+
+
+# --------------------------------------------
+# 4) Open a Pull Request (PR) on GitHub
+# --------------------------------------------
+
+# This is done on GitHub website:
+# - Select your pushed branch
+# - Click "Compare & pull request"
+# - Add title + short description
+# - Request review (if your team does that)
+# - PR will be merged into main after approval
+
+
+# ---------------------------------------------------------
+# 5) Keep your branch updated with latest main (important)
+# ---------------------------------------------------------
+
+# Purpose: get the newest main changes without leaving your branch
+# (recommended: merge main into your branch)
+
+# Step A: update your local main first
+git checkout main
+git pull origin main
+
+# Step B: merge main into your feature branch
+git checkout feature/<short-name>
+git merge main
+
+# If there are conflicts:
+# - Fix the conflict in files
+# - Then:
+git add .
+git commit -m "Resolve merge conflicts"
+
+# Push updated branch after merging main
+git push
+
+
+# ---------------------------------------
+# 6) After PR is merged: clean up
+# ---------------------------------------
+
+# Purpose: switch to main and pull the final merged code
+git checkout main
+git pull origin main
+
+# Purpose: delete your local branch (safe after merge)
+git branch -d feature/<short-name>
+
+# Purpose: delete remote branch (optional; many teams auto-delete after merge)
+git push origin --delete feature/<short-name>
+
+
+# ---------------------------------------
+# 7) Working on someone else’s branch (sometimes)
+# ---------------------------------------
+
+# Purpose: fetch all remote branches
+git fetch --all
+
+# Purpose: view remote branches
+git branch -r
+
+# Purpose: checkout a teammate’s branch locally
+git checkout -b teammate-branch origin/teammate-branch
+# example:
+# git checkout -b feature/cart origin/feature/cart
+
+
+# ---------------------------------------
+# 8) Common team “rules” (easy)
+# ---------------------------------------
+
+# ✅ Rule 1: Do NOT commit on main
+# ✅ Rule 2: Create a branch for every feature/bug
+# ✅ Rule 3: Push branch + make PR
+# ✅ Rule 4: Pull main frequently to reduce conflicts
+# ✅ Rule 5: Small commits (easier review + fewer conflicts)
+
+
+# ---------------------------------------
+# 9) Conflicts (what you do quickly)
+# ---------------------------------------
+
+# When merge shows conflict:
+# - Open conflicted file(s)
+# - Choose correct code (yours / theirs / both)
+# - Remove conflict markers <<<<<< ====== >>>>>>
+# - Then:
+git add .
+git commit -m "Resolve conflicts"
+git push
+
+
+# ---------------------------------------
+# 10) Useful “team” commands (quick help)
+# ---------------------------------------
+
+# Purpose: see branches (local)
+git branch
+
+# Purpose: see branches (remote)
+git branch -r
+
+# Purpose: see all branches
+git branch -a
+
+# Purpose: download updates (without merging)
+git fetch
+
+# Purpose: see commit history (nice view if alias exists)
+git log --oneline --graph --decorate --all
+
+# Purpose: stash unfinished work (when you must switch tasks fast)
+git stash
+git stash pop
+
+
+# ============================================================
+# RECOMMENDED TEAM WORKFLOW (MINI CHECKLIST)
+# ============================================================
+# 1) git checkout main
+# 2) git pull origin main
+# 3) git checkout -b feature/<name>
+# 4) code...
+# 5) git add . && git commit -m "message"
+# 6) git push -u origin feature/<name>
+# 7) open PR on GitHub
+# 8) keep updated: merge main into your branch when needed
+# 9) after merge: git checkout main && git pull && delete branch
+# ============================================================

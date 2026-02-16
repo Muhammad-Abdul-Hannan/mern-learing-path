@@ -1,0 +1,226 @@
+# ============================================================
+# GIT CHEATSHEET (WORKING ALONE) — step-by-step + purpose
+# Copy/paste into your notes. (Commands start with: git ...)
+# ============================================================
+
+
+# ----------------------------
+# 0) One-time setup (do once)
+# ----------------------------
+
+# Set your name (shows in commits)
+git config --global user.name "Your Name"
+
+# Set your email (use the same email as GitHub if possible)
+git config --global user.email "you@example.com"
+
+# Check your config
+git config --global --list
+
+# Optional: make default branch name "main"
+git config --global init.defaultBranch main
+
+# Optional: better looking logs
+git config --global alias.lg "log --oneline --graph --decorate --all"
+
+
+# -----------------------------------
+# 1) Start a project (2 common ways)
+# -----------------------------------
+
+# A) Start new project folder with Git
+# Purpose: create a new local Git repository
+git init
+
+# B) OR download an existing repo (clone)
+# Purpose: get a full copy of a repo (history + files)
+git clone <repo_url>
+
+
+# ---------------------------------------
+# 2) Daily work cycle (edit → save history)
+# ---------------------------------------
+
+# Purpose: see current status (modified files, staged files)
+git status
+
+# Purpose: see what changed (line-by-line)
+git diff
+
+# Purpose: stage ONE file (prepare it for commit)
+git add <file_name>
+
+# Purpose: stage EVERYTHING changed (be careful)
+git add .
+
+# Purpose: commit staged changes (save a checkpoint)
+git commit -m "Meaningful message"
+
+# Tip: commit message examples:
+# "Add login page UI"
+# "Fix calculator division bug"
+# "Update README instructions"
+
+
+# ----------------------------
+# 3) View history & inspect
+# ----------------------------
+
+# Purpose: see commits (simple)
+git log --oneline
+
+# Purpose: see commits (detailed)
+git log
+
+# Purpose: see nice graph (if you set alias 'lg' above)
+git lg
+
+# Purpose: see who changed what in a file
+git blame <file_name>
+
+
+# ---------------------------------------
+# 4) Undo things (very common, be careful)
+# ---------------------------------------
+
+# A) Undo changes in a file (go back to last committed version)
+# Purpose: discard local edits (NOT staged)
+git restore <file_name>
+
+# Undo ALL local changes (NOT staged)
+git restore .
+
+# B) Unstage a file (remove from staging area)
+# Purpose: keep changes but remove from 'git add'
+git restore --staged <file_name>
+
+# C) Change the last commit message (or include missed staged changes)
+# Purpose: adjust the last commit (if not pushed anywhere)
+git commit --amend -m "New message"
+
+# D) Go back to a previous commit (safe method)
+# Purpose: create a NEW commit that cancels a past commit
+git revert <commit_hash>
+
+# E) Reset (more dangerous) — use only when you understand it
+# Purpose: move HEAD back (can remove commits locally)
+# Keep file changes (soft)
+git reset --soft <commit_hash>
+# Keep file changes but unstage them (mixed, default)
+git reset <commit_hash>
+# Remove file changes too (hard) — DANGER: deletes local work
+git reset --hard <commit_hash>
+
+
+# ----------------------------
+# 5) Branches (optional alone)
+# ----------------------------
+
+# Purpose: list branches
+git branch
+
+# Purpose: create a new branch
+git branch <branch_name>
+
+# Purpose: switch to a branch
+git checkout <branch_name>
+# Modern alternative:
+git switch <branch_name>
+
+# Purpose: create AND switch to new branch
+git checkout -b <branch_name>
+# Modern alternative:
+git switch -c <branch_name>
+
+# Purpose: merge a branch into current branch
+git merge <branch_name>
+
+# Purpose: delete a branch (after merge)
+git branch -d <branch_name>
+# Force delete (if not merged)
+git branch -D <branch_name>
+
+
+# ----------------------------
+# 6) Save work temporarily
+# ----------------------------
+
+# Purpose: stash (hide) your uncommitted changes
+git stash
+
+# Purpose: list stashes
+git stash list
+
+# Purpose: apply last stash (keep stash saved)
+git stash apply
+
+# Purpose: apply last stash and remove it
+git stash pop
+
+# Purpose: remove a stash
+git stash drop
+
+
+# ----------------------------
+# 7) Tags (mark versions)
+# ----------------------------
+
+# Purpose: create a tag (like version name)
+git tag v1.0.0
+
+# Purpose: list tags
+git tag
+
+# Purpose: delete a tag (local)
+git tag -d v1.0.0
+
+
+# ----------------------------
+# 8) .gitignore (must know)
+# ----------------------------
+
+# Purpose: ignore files you don't want to commit (node_modules, .env, etc.)
+# Create/edit a .gitignore file (example for JS/Node):
+# node_modules/
+# .env
+# dist/
+# .DS_Store
+
+
+# ---------------------------------------
+# 9) If you later want to upload to GitHub
+# ---------------------------------------
+
+# Purpose: check which remote is connected (if any)
+git remote -v
+
+# Purpose: connect your local repo to GitHub repo
+git remote add origin <repo_url>
+
+# Purpose: push your branch to GitHub (first time)
+git push -u origin main
+
+# Purpose: push commits after that
+git push
+
+# Purpose: pull latest changes from GitHub (if you work on multiple PCs)
+git pull
+
+
+# ----------------------------
+# 10) Quick "emergency" checks
+# ----------------------------
+
+# Purpose: see current branch + status quickly
+git status -sb
+
+# Purpose: see what branches exist locally + remote
+git branch -a
+
+# Purpose: see remote details
+git remote show origin
+
+
+# ============================================================
+# END — Working Alone Git Cheatsheet
+# ============================================================
