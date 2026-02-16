@@ -30,6 +30,8 @@ Notes are organized by concepts, not by random daily entries.
 🗂️ Projects Completed ✅
 ### html, css, js:
 MyPortfolio: https://muhammad-abdul-hannan.github.io/MyPortfolio/
+
 Time Reminder Dashboard: https://muhammad-abdul-hannan.github.io/Task-Reminder-Dashboard/
+
 Freelancer Timezone Buddy: https://muhammad-abdul-hannan.github.io/Freelancer-Timezone-Buddy/
 
