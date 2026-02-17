@@ -43,5 +43,10 @@ Notes are organized by concepts, not by random daily entries.
 - 🌍 Live Demo: https://muhammad-abdul-hannan.github.io/Freelancer-Timezone-Buddy/
 - 🛠 Tech Used: HTML, CSS, JS, LocalStorage API, Intl API
 
+### 4. Side Icons Widget -- npm package (static)
+- 🔗 npm Repo: https://www.npmjs.com/package/side-icons-widget
+- 🌍 Live Demo: --
+- 🛠 Tech Used: HTML, CSS, JS, Ionicons.
+
 
 > Learning in public. Building consistency. Improving daily.
