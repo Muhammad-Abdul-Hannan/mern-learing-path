@@ -56,6 +56,7 @@ Notes are organized by concepts, not by random daily entries.
 - ☰ Html and CSS is auto injected. Just use npm install (or CDN) and enjoy amazing side social icons on your website.
 
 For CDN use this script (Don't forget to include IonIcons cdn):
+```javascript
 <script type="module">
     import { mountSideIcons } from "https://cdn.jsdelivr.net/npm/side-icons-widget-js@1.0.0/src/index.js";
 
@@ -63,7 +64,7 @@ For CDN use this script (Don't forget to include IonIcons cdn):
     links: { github: "https://github.com/" },
     });
 </script>
-
+```
 
 
 > Learning in public. Building consistency. Improving daily.
