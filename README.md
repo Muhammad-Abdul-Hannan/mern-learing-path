@@ -8,8 +8,8 @@ This repository documents my journey of learning the MERN Stack (Many More + Mon
 - ✅ CSS (Completed)
 - ✅ JavaScript (Completed)
 - ✅ Git & GitHub (Completed)
-- 🔄 npm (In Progress)
-- ⏳ Node.js
+- ✅ npm (Completed)
+- 🔄 Node.js (In Progress)
 - ⏳ Express
 - ⏳ MongoDB
 - ⏳ React
