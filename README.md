@@ -9,7 +9,7 @@ This repository documents my journey of learning the MERN Stack (Many More + Mon
 - ✅ JavaScript (Completed)
 - ✅ Git & GitHub (Completed)
 - ✅ npm (Completed)
-- 🔄 Node.js (In Progress)
+- ✅ Node.js (Completed)
 - ✅ Express (Completed)
 - ✅ MongoDB / Mongoose (Completed)
 - ⏳ React
